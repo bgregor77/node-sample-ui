@@ -1,0 +1,10 @@
+---
+applications:
+- name: mbt-sample-ui
+  command: node 
+  memory: 512M
+  disk_quota: 512M
+  instances: 1
+  buildpack: staticfile_buildpack
+  env:
+    COLORENDPOINT: http://mbt-sample-service.cfapps.io/api/v1/colors 
